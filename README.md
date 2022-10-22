@@ -20,10 +20,10 @@ I will add some conditional function later to avoid this.
 Many datas are still in progress and will be added later on. 
 
 3. How to make .exe file from Windows? 
-\n I made .exe file and custom the icon for the file using pyinstaller. 
-You either need to add pyinstaller to your PATH or go into pyinstaller source location in order to make the below code work. 
-(My location for pyinstaller is: C:\Users\trann\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\Scripts, you can try to have a look yourself) 
-Download the coin_info.py file and uquid.ico file to your computer, move them in the pyinstaller location if you didn't add pyinstaller as your PATH.
+<br />I made .exe file and custom the icon for the file using pyinstaller. 
+<br />You either need to add pyinstaller to your PATH or go into pyinstaller source location in order to make the below code work. 
+<br />My location for pyinstaller is: C:\Users\trann\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\Scripts, you can try to have a look yourself) 
+<br />Download the coin_info.py file and uquid.ico file to your computer, move them in the pyinstaller location if you didn't add pyinstaller as your PATH.
 
 After doing 1 of those above, enter the code below: 
 * pyinstaller.exe --onefile coin_info.py
