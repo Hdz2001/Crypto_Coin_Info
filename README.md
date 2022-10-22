@@ -36,7 +36,7 @@ You can move everything into 1 folder to keep track easier.
 ![image](https://user-images.githubusercontent.com/77633718/197322786-f96c979a-d9b3-4011-b6bf-a5a1842ab735.png)
 
 **To sum up**:
-This is my personal project as I'm working for a crypto company - UQUID and I want to make keeping track of coin infos of our partners easier. 
+<br />This is my personal project as I'm working for a crypto company - UQUID and I want to make keeping track of coin infos of our partners easier. 
 
 Feel free to try it out and let me know if there are any errors occurred or what infos/features you guys want me to add into this project through my social medias. 
 
