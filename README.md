@@ -20,9 +20,9 @@ I will add some conditional function later to avoid this.
 Many datas are still in progress and will be added later on. 
 
 **3. Downloading the .exe file:** 
-<br />If you don't want extra work and just the .exe file, you can download from this link: https://drive.google.com/file/d/139auc5OGk0LX4t0-SMB4bLzkTjcmjaWB/view?usp=sharing because GitHub doesn't allow me to upload the file because of its size. No external libraries or environments installations needed. 
-<br />Make sure to select trust the file and keep it so it will be downloaded to your PC. 
-<br />Choose run anyway if any windows pop-up when you attempt to run the program. You might need to disable virus and security check if it doesn't allow. I will try to add signature to the file in the future to avoid those things.
+* If you don't want extra work and just the .exe file, you can download from this link: https://drive.google.com/file/d/139auc5OGk0LX4t0-SMB4bLzkTjcmjaWB/view?usp=sharing because GitHub doesn't allow me to upload the file because of its size. No external libraries or environments installations needed. 
+* Make sure to select trust the file and keep it so it will be downloaded to your PC. 
+* Choose run anyway if any windows pop-up when you attempt to run the program. You might need to disable virus and security check if it doesn't allow. I will try to add signature to the file in the future to avoid those things.
 
 **4. How to make .exe file from Windows?** 
 If you want to explore and DIY, here is what i did:
