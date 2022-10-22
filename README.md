@@ -20,7 +20,7 @@ I will add some conditional function later to avoid this.
 Many datas are still in progress and will be added later on. 
 
 3. How to make .exe file from Windows? 
-I made .exe file and custom the icon for the file using pyinstaller. 
+\n I made .exe file and custom the icon for the file using pyinstaller. 
 You either need to add pyinstaller to your PATH or go into pyinstaller source location in order to make the below code work. 
 (My location for pyinstaller is: C:\Users\trann\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\Scripts, you can try to have a look yourself) 
 Download the coin_info.py file and uquid.ico file to your computer, move them in the pyinstaller location if you didn't add pyinstaller as your PATH.
@@ -32,7 +32,7 @@ It will return the build and dist folders, along with SPEC file of coin_info and
 After that, run this code to add icon to the exe file, both outer and inner (windowed mode).
 * Refer to this source: https://mborgerson.com/creating-an-executable-from-a-python-script/ if you want to understand more about how pyinstaller works.
 
-=> To sum up, this is my personal project as I'm working for a crypto company - UQUID and I want to make keeping track of coin infos of our partners easier. 
+To sum up, this is my personal project as I'm working for a crypto company - UQUID and I want to make keeping track of coin infos of our partners easier. 
 
 Feel free to try it out and let me know if there are any errors occurred or what infos/features you guys want me to add into this project through my social medias. 
 
