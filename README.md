@@ -34,6 +34,6 @@ After that, run this code to add icon to the exe file, both outer and inner (win
 
 **To sum up**, this is my personal project as I'm working for a crypto company - UQUID and I want to make keeping track of coin infos of our partners easier. 
 
-<br />Feel free to try it out and let me know if there are any errors occurred or what infos/features you guys want me to add into this project through my social medias. 
+Feel free to try it out and let me know if there are any errors occurred or what infos/features you guys want me to add into this project through my social medias. 
 
-<br />Have a great day and stay safe :) 
+Have a great day and stay safe :) 
