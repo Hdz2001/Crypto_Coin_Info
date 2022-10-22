@@ -3,7 +3,7 @@ A program that gather necessary crypto coin infomation. such as current price, r
 
 ![Screenshot 2022-10-22 000123](https://user-images.githubusercontent.com/77633718/197321073-ac423017-7d41-4b5e-9257-fdade4c82a6f.png)
 
-**1. What are the input for the program?**
+**1. What are the inputs for the program?**
 - input needed: coin name and coin code. For example: uquid coin and UQC. 
 * Coin name: you can put any space before or after the name, or write in lower or upper case, but make sure each words of your coin name is separate by a space.
 Eg: "    uquid coin  " or "   UqUid CoIn   "  are valid input, but not "uquidcoin" 
