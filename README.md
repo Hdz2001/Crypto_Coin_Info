@@ -30,9 +30,9 @@ If you want to explore and DIY, here is what i did:
 
 After doing 1 of those above, enter the code below: 
 * pyinstaller.exe --onefile coin_info.py
-It will return the build and dist folders, along with SPEC file of coin_info and coin_info.exe will be in the dist folder. 
+<br />It will return the build and dist folders, along with SPEC file of coin_info and coin_info.exe will be in the dist folder. 
 * pyinstaller.exe --onefile --icon=uquid.ico coin_info.py
-After that, run this code to add icon to the exe file, both outer and inner (windowed mode).
+<br />After that, run this code to add icon to the exe file, both outer and inner (windowed mode).
 * Refer to this source: https://mborgerson.com/creating-an-executable-from-a-python-script/ if you want to understand more about how pyinstaller works.
 
 You can move everything into 1 folder to keep track easier.
