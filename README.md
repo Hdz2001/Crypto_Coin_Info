@@ -20,12 +20,12 @@ I will add some conditional function later to avoid this.
 Many datas are still in progress and will be added later on. 
 
 **3. How to make .exe file from Windows?** 
-If you don't want extra work and just the .exe file, you can download from this link: https://drive.google.com/file/d/139auc5OGk0LX4t0-SMB4bLzkTjcmjaWB/view?usp=sharing because GitHub doesn't allow me to upload the file because of its size. No external libraries or environments installations needed. 
+<br />If you don't want extra work and just the .exe file, you can download from this link: https://drive.google.com/file/d/139auc5OGk0LX4t0-SMB4bLzkTjcmjaWB/view?usp=sharing because GitHub doesn't allow me to upload the file because of its size. No external libraries or environments installations needed. 
 
 If you want to explore and DIY, here is what i did:
 * I made .exe file and custom the icon for the file using pyinstaller. 
 * You either need to add pyinstaller to your PATH or go into pyinstaller source location in order to make the below code work. 
-* My location for pyinstaller is: C:\Users\trann\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\Scripts, you can try to have a look yourself) 
+* My location for pyinstaller is: C:\Users\trann\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\Scripts, you can try to have a look yourself.
 * Download the coin_info.py file and uquid.ico file to your computer, move them in the pyinstaller location if you didn't add pyinstaller as your PATH.
 
 After doing 1 of those above, enter the code below: 
