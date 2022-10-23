@@ -16,6 +16,7 @@ So far:
 * historical data: data colleted from coinmarketcap.com, using CmcScraper from cryptocmd library and print the data out using panda.
 Some coin code which doesn't exist still return the data, for example, if you input "a" as the code, you still have the data table.
 I will add some conditional function later to avoid this.
+* social links: check and return socials link, such as: 'Twitter','Facebook','Instagram','Telegram','Discord','Reddit'
 * scam check: data collected including safety score percentage from isthiscoinascam.com, using web scraping from beautifulsoup. 
 Many datas are still in progress and will be added later on. 
 
