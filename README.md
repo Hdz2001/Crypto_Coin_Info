@@ -1,7 +1,7 @@
 # CryptoCoinInfo
 A program that gather necessary crypto coin infomation. such as current price, rank, historical data, etc
 
-![Screenshot 2022-10-22 000123](https://user-images.githubusercontent.com/77633718/197321073-ac423017-7d41-4b5e-9257-fdade4c82a6f.png)
+![image](https://user-images.githubusercontent.com/77633718/197381362-553bdb8f-c873-4bd5-9484-5aeef8b3866e.png)
 
 **1. What are the inputs for the program?**
 - input needed: coin name and coin code. For example: uquid coin and UQC. 
@@ -16,7 +16,7 @@ So far:
 * historical data: data colleted from coinmarketcap.com, using CmcScraper from cryptocmd library and print the data out using panda.
 Some coin code which doesn't exist still return the data, for example, if you input "a" as the code, you still have the data table.
 I will add some conditional function later to avoid this.
-* social links: check and return socials link, such as: 'Twitter','Facebook','Instagram','Telegram','Discord','Reddit'
+* social links: check and return socials link, such as: 'Twitter', 'Facebook', 'Instagram', 'Telegram', 'Discord', 'Reddit'.
 * scam check: data collected including safety score percentage from isthiscoinascam.com, using web scraping from beautifulsoup. 
 Many datas are still in progress and will be added later on. 
 
