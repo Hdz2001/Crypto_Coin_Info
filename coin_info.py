@@ -13,21 +13,24 @@ import time
 import requests
 import random
 
-'''
-from requests_html import HTMLSession
-from requests_html import AsyncHTMLSession
+# import for selenium
 from selenium import webdriver
+from selenium.webdriver.chrome.service import Service
+from webdriver_manager.chrome import ChromeDriverManager
+from selenium.webdriver.common.by import By
 
-import json
-import requests
-'''
-
-# input and page string
+# input and page string variables
 coin_name = input("Which coin do you want to check?: ")
 coin_name = coin_name.lower().strip().replace(' ', '-')
 
 coin_code = input("What is the code of the coin?: ")
 coin_code = coin_code.upper().strip()
+
+# socials variables
+socials = ['Twitter','Facebook','Instagram','t.me','Discord','Reddit']
+others = ['medium']
+others.append(coin_name)
+others.append(coin_code)
 
 # soup 
 string_page = "https://coinmarketcap.com/currencies/" + coin_name + "/"
@@ -62,10 +65,38 @@ def getRank():
 
 # spores network market
 
-# 3. historical data 
+# 3. Socials link
+def getSocials():
+    s= Service(ChromeDriverManager().install())
+    driver = webdriver.Chrome(service=s)
+    driver.get(string_page)
+    driver.minimize_window()
+
+    # here you can find all the links
+    links = driver.find_elements(By.XPATH, '//a[@href]')
+    # get attribute links
+    href = [i.get_attribute("href") for i in links]
+    # remove duplicate links
+    href = list(dict.fromkeys(href))
+    # remove coinmarketcap links
+    href = [item for item in href if "coinmarketcap" not in item.lower()]
+
+    # printing out infos
+    print("\n3. Socials links:")
+
+    for substring in socials: 
+        if substring == 't.me':
+            print("* Telegram links:")
+        else:
+            print(f"* {substring} links:")
+        for i in href:
+            if substring.lower() in i:
+                print(i)
+
+# 4. historical data 
 def getHistoricalData():
     try: 
-        print("\n3. Historical data:")
+        print("\n4. Historical data:")
         # initialise scraper without time interval for max historical data
         scraper = CmcScraper(coin_code)
         # Pandas dataFrame for the same data
@@ -74,8 +105,7 @@ def getHistoricalData():
     except Exception as e: 
         print("Hmm, can't quite find your coin or the data not available on CMC, check and run again?")
 
-
-# 4. check scam
+# 5. check scam
 def scoreValues(str):
     print(f'Total score is: {str[0]}%.')
     print(f'Numbers of critical flags is: {str[1]}.')
@@ -85,8 +115,7 @@ def scoreValues(str):
     print(f'Numbers of info flags is: {str[5]}.')
 
 def checkScam():
-    try:
-        
+    try:      
         string_page = 'https://isthiscoinascam.com/check/' + coin_name
         page = requests.get(string_page)
         soup1 = bs(page.content, features="html.parser")
@@ -94,7 +123,7 @@ def checkScam():
         # score check
         safety_score =  [link.string for link in soup1.find_all(class_='score_count')]
 
-        print("\n4. Scam check: ")
+        print("\n5. Scam check: ")
         scoreValues(safety_score)
     except Exception as e: 
         print("Hmm, can't quite find your coin or the data not available on isthiscoinascam.com, check and run again?")
@@ -105,9 +134,10 @@ def main():
     printDateAndTime()
     getPrice()
     getRank()
+    getSocials()
     getHistoricalData()
     checkScam()
-    exit = input("\n Enter any key if you want to exit: ")
+    exit = input("\nEnter any key if you want to exit. Have a nice day :)")
 
 
 if __name__ == "__main__":
